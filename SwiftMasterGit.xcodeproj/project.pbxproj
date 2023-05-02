@@ -19,6 +19,7 @@
 		E6B870BB2A00F0A300A69067 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E6B870BD2A00F0A500A69067 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6B870C02A00F0A500A69067 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6B870C92A00F3FD00A69067 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,7 @@
 		E6B870AD2A00F0A300A69067 = {
 			isa = PBXGroup;
 			children = (
+				E6B870C92A00F3FD00A69067 /* MyPlayground.playground */,
 				E6B870B82A00F0A300A69067 /* SwiftMasterGit */,
 				E6B870B72A00F0A300A69067 /* Products */,
 			);
