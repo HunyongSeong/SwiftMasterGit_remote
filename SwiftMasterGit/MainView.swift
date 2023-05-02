@@ -11,7 +11,7 @@ struct MainView: View {
     var body: some View {
         ZStack{
             
-            Color.red.ignoresSafeArea(.all)
+            Color.blue.ignoresSafeArea(.all)
             
             VStack {
                 Image(systemName: "globe")
