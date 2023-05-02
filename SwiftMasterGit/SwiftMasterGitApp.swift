@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftMasterGitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
             // 새로운 줄 만들고 주석 추가해서 줄 바꿈
         }
     }
