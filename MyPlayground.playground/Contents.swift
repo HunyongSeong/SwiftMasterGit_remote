@@ -129,3 +129,24 @@ sayHelloTwoVar()
 
 var sayHelloTwoVar2 = sayHelloTwo()
 sayHelloTwoVar
+
+// MARK: - 함수 메모리 구조
+func aPlusB(a: Int, b: Int) -> Int {
+    var c = a + b
+    return c
+}
+
+func aPlusBTwo(a: Int, b: Int) -> Int {
+    var c = doubleSquare(width: a, Height: b)
+    return c
+}
+
+func doubleSquare(width: Int, Height: Int) -> Int {
+    var result = width * Height
+    return result
+}
+
+// func
+aPlusB(a: 1, b: 5)
+doubleSquare(width: 5, Height: 6)
+aPlusBTwo(a: 5, b: 6)
