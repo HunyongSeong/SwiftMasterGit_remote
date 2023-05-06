@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SecondView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 25)
+                    .fill(
+                        LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue, Color.orange, Color.purple]),
+                                       startPoint: .leading,
+                                       endPoint: .trailing)
+                    )
+
     }
 }
 

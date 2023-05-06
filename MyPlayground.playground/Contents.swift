@@ -150,3 +150,80 @@ func doubleSquare(width: Int, Height: Int) -> Int {
 aPlusB(a: 1, b: 5)
 doubleSquare(width: 5, Height: 6)
 aPlusBTwo(a: 5, b: 6)
+
+
+// MARK: - 41강 - 함수
+// 1. 랜던 문자열을 뽑아내는 함수를 만들어 보자!
+
+var someString = "가나다라마바사"
+someString.randomElement()
+func RandomString(_ a: String) -> String {
+
+//    var resultString: String = a.randomElement() // <- 나는 이렇게 써서 계속 오류
+        var resultString = String(a.randomElement()!) // 이것이 맞음
+    // 이렇게 하는 이유는 -> a.randomElement() 옵션으로 확인해보면, 이것은 옵셔널 타입으로 값이 없을수도 있다는 것을 알려주었고, Character 형이어서, String 타입으로 바꿔주어야 한다.!
+
+    return resultString
+}
+
+RandomString(someString)
+
+// 2. 소수를 판별하는 함수를 만들어보자
+
+// 1- 과정. 2부터 가능한데 2는 1과 자기 자신만으로 이루어져있다
+// 2 - 3은 1과 3으로
+// 3 - 4는 1, 2, 4 / 5 = 1, 5 / 6 = 1, 2, 3, 6/ 7 = 1, 7 .... 13은 ...
+
+// for 문으로 싹다 돌리고, if 문으로 13일 때, 10 보다 큰 수 중에서 / 2, 3, 5, 7 로 한번이라도 나누어진다면 안된다.
+// 1부터 2 3 5 7 나눈 값이 1 이상이라면, if i/2 ,3, 5, 7 >= 1 이라면 소수 아님
+
+
+// MARK: - if let 바인딩 연습
+
+var optionalString: String? = "good"
+var optionalStringTwo: String?
+
+if let newString = optionalString {
+    print(newString)
+}
+
+if let a = optionalStringTwo {
+    print(a)
+}
+
+func guardLetTest(a: String?) -> () {
+    guard let _ = a else {
+        print("nillllll")
+        return
+        
+    }
+    print("there is string")
+}
+
+guardLetTest(a: optionalStringTwo)
+
+// MARK: - Enumeration
+
+var nums = [1, 2, 3, 4, 5, 2, 1]
+for tuple in nums.enumerated() {
+//    print(tuple)
+    print("\(tuple.0) - \(tuple.1)") // tuple의 0번째 값과, 1번째 값이 있는 바구니에서 하나씩 꺼낸형태라서 이렇게 결과가 나오는 것 같다.!
+}
+// (offset: 0, element: 1)
+// (offset: 1, element: 2)
+// 이런식으로 출력됨. <- 아마 기본값이 세팅이 되어있나보다..! 신기함.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
