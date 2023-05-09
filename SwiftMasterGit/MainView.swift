@@ -8,19 +8,33 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var firstTitle = "firstTitle"
+    @State var secondTitle = "secondTitle"
+    @State var thirdTitle = "thirdTitle"
+    
     var body: some View {
-        ZStack{
+        VStack {
+            Text(firstTitle)
+                .background(.random)
+            Text(secondTitle)
+                .background(.random)
+            Text(thirdTitle)
+                .background(.random)
             
-            Color.blue.ignoresSafeArea(.all)
-            
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("텍스트 변경2")
+            Button("Change first title") {
+                firstTitle = "hello world"
             }
-            .padding()
         }
+    }
+}
+
+extension ShapeStyle where Self == Color {
+    static var random: Color {
+        Color(
+            red: .random(in: 0...1),
+            green: .random(in: 0...1),
+            blue: .random(in: 0...1)
+        )
     }
 }
 

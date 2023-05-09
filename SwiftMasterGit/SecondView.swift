@@ -9,16 +9,29 @@ import SwiftUI
 import UIKit
 
 struct SecondView: View {
+    @State var showNewScreen: Bool = false
+    
     var body: some View {
-        RoundedRectangle(cornerRadius: 25)
-                    .fill(
-                        LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue, Color.orange, Color.purple]),
-                                       startPoint: .leading,
-                                       endPoint: .trailing)
-                    )
+        VStack(){
+            Text("Hello Goggins")
+                .font(.title2)
+            
+            HStack{
+                Image(systemName: "tray.fill")
+                Text("Step: 2")
+            }
+            HStack{
+                Image(systemName: "tray.fill")
+                Text("Current: 0")
+            }
+            HStack{
+                Text("ADD")
+            }
 
+        }
     }
 }
+
 
 struct SecondView_Previews: PreviewProvider {
     static var previews: some View {

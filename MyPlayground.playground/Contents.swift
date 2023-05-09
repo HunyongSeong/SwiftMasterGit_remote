@@ -40,6 +40,40 @@ default:
     break
 }
 
+
+// 1번 문제
+// 스위치문을 이용해서 bigNum을 새로운 상수 a에 바인딩하고 이 값이 홀수면 홀수, 짝수면 짝수라고 출력하게 만드시오.
+var bigNum = 100
+
+switch bigNum {
+case bigNum where bigNum % 2 == 0:
+    print("짝")
+default :
+    print("홀")
+}
+
+
+
+//튜플의 활용
+// 2번 문제 -> xy는 x,y라는 좌표를 가리키고 있습니다.
+// x,y에 랜덤값이 들어간다고 가정했을 때, xy가 x축 위에 있을 때 "x축 위에 위치함" x축 위에 위치하지 않을때,
+// "x축 위에 있지 않음"이라고 출력하는 스위치문을 만드시오.
+
+var xy = (0, 5)         //출력결과: "x축 위에 위치함, x = 5"
+//var xy = (1, 5)       //출력결과: "x 축 위에 있지 않음"
+//var xy = (-1, -3)     //출력결과: "x 축 위에 있지 않음"
+
+// 정답:
+switch xy {
+case(let distance, 0), (0, let distance):
+    print("x축 위에 위치함, x = \(distance)")
+default :
+    print("x 축 위에 있지 않음")
+}
+
+
+
+
 // 가위바위 보 문제 만들어보기 - 이지
 // 컴퓨터 랜덤선택, 나 선택, 결과 출력 이겼다.
 
@@ -214,6 +248,7 @@ for tuple in nums.enumerated() {
 // 이런식으로 출력됨. <- 아마 기본값이 세팅이 되어있나보다..! 신기함.
 
 
+//MARK: - Dictionary
 
 
 
