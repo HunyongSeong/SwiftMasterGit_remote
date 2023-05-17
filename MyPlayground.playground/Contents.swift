@@ -250,14 +250,12 @@ for tuple in nums.enumerated() {
 
 //MARK: - Dictionary
 
-
-
-
-
-
-
-
-
+// 이미지 배열로 넣는 방법
+let imageArray: [UIImage] = [
+UIImage(named: "image1")!,
+UIImage(named: "image2")!,
+UIImage(named: "image3")!
+]
 
 
 
