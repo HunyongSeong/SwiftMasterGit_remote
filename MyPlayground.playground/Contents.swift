@@ -258,5 +258,10 @@ UIImage(named: "image3")!
 ]
 
 
-
-
+// lazyGrid
+let columns = [
+    GridItem(.flexible(), spacing: 0),
+    GridItem(.flexible(), spacing: 0),
+    GridItem(.flexible(), spacing: 0),
+    GridItem(.flexible(), spacing: 0)
+]
